@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact &mdash; Prajna Studio</title>
+  <meta name="description" content="Start a project with Prajna. Tell us about it." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <main class="page">
+
+    <header class="site-header">
+      <a href="index.html" class="logo" aria-label="Prajna home"></a>
+    </header>
+
+    <!-- INTRO -->
+    <section class="hero">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="eyebrow">Start a project</div>
+          <h2 class="headline">Tell us about it.</h2>
+          <p style="margin-top:18px">
+            A few lines is enough to start. What are you building, who is
+            it for, and where is it stuck today? We reply within two
+            business days &mdash; always from a real person.
+          </p>
+
+          <div class="info-block">
+            <div class="info-label">Email</div>
+            <div class="info-value"><a href="mailto:prabhuhiremath712@gmail.com">prabhuhiremath712@gmail.com</a></div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-label">Hours</div>
+            <div class="info-value">Mon &ndash; Fri &middot; 10:00 &ndash; 19:00 IST</div>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <form class="contact-form"
+              id="contactForm"
+              action="https://formspree.io/f/your-form-id"
+              method="POST">
+          <!-- Formspree config: send notifications to this address -->
+          <input type="hidden" name="_to" value="prabhuhiremath712@gmail.com" />
+          <input type="hidden" name="_subject" value="New Prajna Studio enquiry" />
+          <input type="hidden" name="_replyto" value="" id="hiddenReplyTo" />
+
+          <div class="field">
+            <div class="field-num">01</div>
+            <div>
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="Jane Doe" />
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="field-num">02</div>
+            <div>
+              <label for="company">Company (optional)</label>
+              <input type="text" id="company" name="company" autocomplete="organization" placeholder="Acme Inc." />
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="field-num">03</div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@company.com" />
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="field-num">04</div>
+            <div>
+              <label for="message">What are you working on?</label>
+              <textarea id="message" name="message" required rows="3" placeholder="A short paragraph is plenty."></textarea>
+            </div>
+          </div>
+
+          <div class="submit-row">
+            <button type="submit" class="btn-send" id="submitBtn">
+              <span>Send a message</span>
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div>
+        <h4>Prajna Studio</h4>
+        <p>Design with clarity. Build with awareness.</p>
+        <p class="contact-line">
+          <span class="label">Contact</span>
+          <a href="mailto:prabhuhiremath712@gmail.com">prabhuhiremath712@gmail.com</a>
+        </p>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="index.html">&minus; Home</a></li>
+        <li><a href="about.html">&minus; About</a></li>
+        <li><a href="services.html">&minus; Services</a></li>
+        <li><a href="contact.html">&minus; Contact</a></li>
+      </ul>
+    </footer>
+
+  </main>
+
+  <script src="scripts/contact.js"></script>
+</body>
+</html>
